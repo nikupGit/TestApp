@@ -37,7 +37,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(200, 150);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(300, 30);
+            this.textBox1.Size = new System.Drawing.Size(300, 22);
             this.textBox1.TabIndex = 0;
             // 
             // button1
@@ -48,6 +48,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Выход";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -57,6 +58,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Отобразить";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
