@@ -19,7 +19,20 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Создаем диалоговое окно с вопросом
+            DialogResult result = MessageBox.Show(
+            "Вы действительно хотите выйти?", // Текст сообщения
+            "Подтверждение выхода",          // Заголовок окна
+            MessageBoxButtons.YesNo,         // Кнопки "Да" и "Нет"
+            MessageBoxIcon.Question       
+            );
 
+            // Если пользователь нажал "Да" (Yes)
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit(); // Закрыть приложение
+                                    // Или для закрытия текущей формы: this.Close();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
